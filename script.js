@@ -8,11 +8,11 @@ function initiateGame() {
     for (var i = 0; i < originalWord.length; ++i) {
         hiddenWord[i] = "_";
     }
-    document.getElementById('output').innerHTML = hiddenWord.join(" ");
+    document.getElementById('output').innerHTML = hiddenWord.join("");
     checkLife();
 }
 
-function checkLetter (btn) {
+function checkLetter(btn) {
     document.getElementById(btn.id).disabled = true;
     if (originalWord.search(btn.value) > -1) {
         btn.className = "btn btn-success";
