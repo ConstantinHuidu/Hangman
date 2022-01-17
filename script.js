@@ -8,7 +8,7 @@ function initiateGame() {
     for (var i = 0; i < originalWord.length; ++i) {
         hiddenWord[i] = "_";
     }
-    document.getElementById('output').innerHTML = hiddenWord.join("");
+    document.getElementById('output').innerHTML = hiddenWord.join(" ");
     checkLife();
 }
 
